@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Cloud Yak ($CLOUDYAK)</title>
+<meta name="description" content="Inspired by the viral fluffy white yak taking a stroll through a mountain village, Cloud Yak is so soft and white that hikers keep mistaking him for a low cloud"><meta property="og:title" content="Cloud Yak ($CLOUDYAK)"><meta property="og:description" content="Inspired by the viral fluffy white yak taking a stroll through a mountain village, Cloud Yak is so soft and white that hikers keep mistaking him for a low cloud"><meta property="og:image" content="https://pumpyard.github.io/art/n-cloudyak.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"><style>:root{--bg:#0b0718;--ink:#fff;--hot:#ff2bd6;--lime:#c6ff00;--sky:#2be4ff;--sun:#ffd400;--card:#170f2e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Space Mono',ui-monospace,monospace;overflow-x:hidden;padding-bottom:84px}
+body:before{content:"";position:fixed;inset:-50%;z-index:-1;background:radial-gradient(circle at 20% 20%,#ff2bd633,transparent 30%),radial-gradient(circle at 80% 30%,#2be4ff33,transparent 30%),radial-gradient(circle at 50% 80%,#c6ff0026,transparent 35%);animation:drift 18s linear infinite}
+@keyframes drift{to{transform:rotate(360deg)}}
+.mq{overflow:hidden;white-space:nowrap;background:var(--lime);color:#000;font-family:Bungee,sans-serif;font-size:14px;padding:6px 0;border-bottom:3px solid #000}
+.mq span{display:inline-block;animation:mq 40s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+main{max-width:720px;margin:0 auto;padding:18px 16px}
+.hero{position:relative;text-align:center;padding:18px 0 6px}
+.art{width:min(86vw,420px);aspect-ratio:1;object-fit:cover;border-radius:36px;border:5px solid #000;box-shadow:10px 10px 0 var(--hot),-6px -6px 0 var(--sky);animation:wob 3.2s ease-in-out infinite;cursor:pointer;user-select:none}
+@keyframes wob{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.03)}}
+.art:active{transform:scale(.92) rotate(-6deg)}
+h1{font-family:Bungee,sans-serif;font-size:clamp(2.2rem,11vw,4.6rem);line-height:.95;margin:22px 0 6px;background:linear-gradient(90deg,var(--sun),var(--hot),var(--sky),var(--lime));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:300%;animation:sh 6s linear infinite;-webkit-text-stroke:1px #0004}
+@keyframes sh{to{background-position:300%}}
+.tick{display:inline-block;font-family:Bungee,sans-serif;background:var(--hot);color:#000;padding:6px 14px;border:3px solid #000;border-radius:12px;transform:rotate(-3deg);box-shadow:4px 4px 0 #000}
+.sec{background:var(--card);border:3px solid #000;border-radius:22px;box-shadow:6px 6px 0 #000;padding:18px;margin:22px 0}
+.sec h2{font-family:Bungee,sans-serif;margin:0 0 10px;font-size:1.3rem;color:var(--sun)}
+.story{font-size:1.05rem;line-height:1.6;white-space:pre-line}
+.ca{display:flex;gap:8px;align-items:center}.ca code{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#000;padding:12px;border-radius:12px;color:var(--lime);font-size:.85rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:Bungee,sans-serif;font-size:.95rem;color:#000;background:var(--lime);border:3px solid #000;border-radius:14px;padding:12px 16px;text-decoration:none;box-shadow:4px 4px 0 #000;cursor:pointer;transition:transform .08s}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #000}.btn.pk{background:var(--hot)}.btn.sk{background:var(--sky)}.btn.sn{background:var(--sun)}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.chart{position:relative;width:100%;padding-bottom:125%;border-radius:16px;overflow:hidden;border:3px solid #000;background:#000}@media(min-width:700px){.chart{padding-bottom:65%}}
+.chart iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#pit{width:100%;height:300px;display:block;background:#000;border-radius:16px;border:3px solid #000;touch-action:manipulation}
+.score{font-family:Bungee,sans-serif;color:var(--lime)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:flex;gap:8px;padding:10px;background:#0b0718ee;backdrop-filter:blur(8px);border-top:3px solid #000}.bar .btn{flex:1;padding:12px 6px;font-size:.85rem}
+.note{color:#b8b0d6;font-size:.82rem;line-height:1.5}a{color:var(--sky)}
+.cf{position:fixed;top:-10px;width:10px;height:14px;z-index:99;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--lime);color:#000;font-family:Bungee,sans-serif;padding:10px 16px;border:3px solid #000;border-radius:12px;z-index:100;display:none}
+ul.coins{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+ul.coins a{display:block;text-decoration:none;color:#fff;background:var(--card);border:3px solid #000;border-radius:18px;box-shadow:5px 5px 0 #000;padding:10px;text-align:center;font-family:Bungee,sans-serif;font-size:.85rem;transition:transform .15s}
+ul.coins a:hover{transform:rotate(-2deg) scale(1.04)}ul.coins img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;margin-bottom:6px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style></head><body>
+<div class="mq"><span>$CLOUDYAK ✦ BALLS DEEP IN THE TRENCHES ✦ 25% OF FEES → $BALLS ✦ NO PROMISES JUST VIBES ✦ $CLOUDYAK ✦ POP THE BALLS ✦ COPY THE CA ✦ $CLOUDYAK ✦ BALLS DEEP IN THE TRENCHES ✦ 25% OF FEES → $BALLS ✦ NO PROMISES JUST VIBES ✦ $CLOUDYAK ✦ POP THE BALLS ✦ COPY THE CA ✦ $CLOUDYAK ✦ BALLS DEEP IN THE TRENCHES ✦ 25% OF FEES → $BALLS ✦ NO PROMISES JUST VIBES ✦ $CLOUDYAK ✦ POP THE BALLS ✦ COPY THE CA</span></div>
+<main>
+<section class="hero">
+ <img class="art" src="../../art/n-cloudyak.png" alt="Cloud Yak" width="420" height="420" fetchpriority="high">
+ <h1>Cloud Yak</h1><span class="tick">$CLOUDYAK</span>
+ <p class="note">squish count: <b class="score" id="sq">0</b> — tap the art</p>
+ <div class="row" style="justify-content:center;margin-top:10px">
+  <a class="btn" href="https://pump.fun/coin/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">🟢 BUY ON PUMP.FUN</a>
+  <a class="btn sk" href="https://x.com/PKunkle1992" target="_blank" rel="noopener">𝕏 @PKunkle1992</a>
+  
+ </div>
+</section>
+<section class="sec"><h2>📋 CONTRACT</h2><div class="ca"><code>BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU</code><button class="btn pk" data-copy="BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU">COPY</button></div>
+ <p class="note"><a href="https://solscan.io/token/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">solscan</a> · <a href="https://rugcheck.xyz/tokens/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">rugcheck</a> · <a href="https://dexscreener.com/solana/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">dexscreener</a></p></section>
+<section class="sec"><h2>📜 THE LORE</h2><p class="story">Inspired by the viral fluffy white yak taking a stroll through a mountain village, Cloud Yak is so soft and white that hikers keep mistaking him for a low cloud drifting across the plateau. He just keeps grazing and lets the sky take the credit. Head in the clouds, hooves on the ground. Not affiliated with the viral post or anyone in it.</p></section>
+<section class="sec"><h2>📈 CHART</h2><div class="chart"><iframe loading="lazy" title="chart" src="https://dexscreener.com/solana/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=1"></iframe></div></section>
+<section class="sec"><h2>🎱 BALL PIT</h2><p class="note">pop as many balls as you can. score <b class="score" id="sc">0</b> · best <b class="score" id="bs">0</b> <button class="btn sn" id="snd" style="padding:6px 10px;font-size:.7rem">🔇 SOUND OFF</button></p><canvas id="pit"></canvas></section>
+<section class="sec"><h2>🟣 $BALLS TIE-IN</h2><p>25% of the creator fees this coin earns get used to buy <a href="https://pump.fun/coin/HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump" target="_blank" rel="noopener">$BALLS</a>.</p><p class="note">HhBuvegE7Ew2stS5svkMcxL8povkaL8brwt9JUtfpump</p></section>
+<section class="sec"><h2>🧾 STRAIGHT TALK</h2><p class="note">Experimental memecoin, no promises. No roadmap, no utility, no team allocation. Fair launch on pump.fun: mint &amp; freeze authority revoked, metadata immutable, one dev wallet with a small buy at launch that it sells in tranches. Only trade what you can afford to lose.</p>
+<p class="note"><a href="../../">← all pumpyard coins</a></p></section>
+</main>
+<nav class="bar"><a class="btn" href="https://pump.fun/coin/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">BUY</a><a class="btn sk" href="https://dexscreener.com/solana/BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU" target="_blank" rel="noopener">CHART</a><button class="btn pk" data-copy="BxTHXXWri3LPT61CTbkHVkdWCW5Gw5GYu5JEtJypdRbU">COPY CA</button></nav>
+<script>const $=s=>document.querySelector(s);let snd=false;const ac=()=>window._ac||(window._ac=new (window.AudioContext||window.webkitAudioContext)());
+function boop(f=420){if(!snd)return;try{const a=ac(),o=a.createOscillator(),g=a.createGain();o.type='square';o.frequency.value=f;o.frequency.exponentialRampToValueAtTime(f*2.2,a.currentTime+.08);g.gain.value=.05;g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+.15);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.16)}catch(e){}}
+function confetti(n=90){const c=['#ff2bd6','#c6ff00','#2be4ff','#ffd400','#fff'];for(let i=0;i<n;i++){const d=document.createElement('i');d.className='cf';d.style.left=Math.random()*100+'vw';d.style.background=c[i%5];d.style.borderRadius=i%2?'50%':'2px';d.style.animationDuration=(1.2+Math.random()*1.8)+'s';document.body.appendChild(d);setTimeout(()=>d.remove(),3200)}}
+function toast(t){const e=$('.toast');e.textContent=t;e.style.display='block';clearTimeout(window._tt);window._tt=setTimeout(()=>e.style.display='none',1400)}
+document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const v=b.dataset.copy;if(!v)return toast('CA drops at launch');try{await navigator.clipboard.writeText(v)}catch(e){const t=document.createElement('textarea');t.value=v;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}confetti();boop(660);toast('CA COPIED 🟢')});
+let sq=0;const art=$('.art');art&&art.addEventListener('click',()=>{sq++;boop(300+sq*7);$('#sq').textContent=sq;if(sq%25===0)confetti(60)});
+$('#snd')&&($('#snd').onclick=e=>{snd=!snd;e.target.textContent=snd?'🔊 SOUND ON':'🔇 SOUND OFF';boop()});
+(()=>{const cv=$('#pit');if(!cv)return;const x=cv.getContext('2d');let W,H,balls=[],score=0,best=+localStorage.getItem('pit-best-'+location.pathname)||0;const col=['#ff2bd6','#c6ff00','#2be4ff','#ffd400'];
+function rs(){const r=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*r;cv.height=H*r;x.setTransform(r,0,0,r,0,0)}rs();addEventListener('resize',rs);
+function add(){balls.push({x:20+Math.random()*(W-40),y:-20,vx:(Math.random()-.5)*2,vy:0,r:14+Math.random()*16,c:col[balls.length%4]})}
+setInterval(()=>{if(balls.length<26)add()},650);
+function hit(e){const b=cv.getBoundingClientRect(),p=e.touches?e.touches[0]:e,px=p.clientX-b.left,py=p.clientY-b.top;for(let i=balls.length-1;i>=0;i--){const o=balls[i];if((o.x-px)**2+(o.y-py)**2<(o.r+8)**2){balls.splice(i,1);score++;boop(500+score*5);if(score>best){best=score;localStorage.setItem('pit-best-'+location.pathname,best)}$('#sc').textContent=score;$('#bs').textContent=best;if(score%20===0)confetti(50);break}}}
+cv.addEventListener('pointerdown',hit);
+(function f(){x.clearRect(0,0,W,H);for(const o of balls){o.vy+=.25;o.x+=o.vx;o.y+=o.vy;if(o.y>H-o.r){o.y=H-o.r;o.vy*=-.55}if(o.x<o.r||o.x>W-o.r)o.vx*=-1;x.beginPath();x.arc(o.x,o.y,o.r,0,7);x.fillStyle=o.c;x.fill();x.lineWidth=3;x.strokeStyle='#000';x.stroke();x.beginPath();x.arc(o.x-o.r/3,o.y-o.r/3,o.r/4,0,7);x.fillStyle='#fff8';x.fill()}requestAnimationFrame(f)})();$('#bs').textContent=best})();</script><div class="toast"></div></body></html>
